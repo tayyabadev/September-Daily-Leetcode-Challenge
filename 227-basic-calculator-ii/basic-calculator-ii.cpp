@@ -1,7 +1,7 @@
 class Solution {
 public:
     int calculate(string s) {
-        long long int curr = 0, ans = 0;
+         int curr = 0, ans = 0;
         s += '+';
         stack<int> stk;
         char op = '+';
