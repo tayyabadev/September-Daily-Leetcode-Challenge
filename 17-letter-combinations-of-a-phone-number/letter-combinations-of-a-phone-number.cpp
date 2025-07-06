@@ -5,7 +5,7 @@ void backtrack(vector<string>&output,string &answer,vector<string>&letters,strin
         return;
     }
     string ltrs=letters[digits[idx]-'0'];
-    for(int l : ltrs){
+    for(char l : ltrs){
         answer.push_back(l);
         backtrack(output,answer,letters,digits,idx+1);
         answer.pop_back();
